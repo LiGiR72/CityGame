@@ -21,12 +21,12 @@ public class Main {
                     out.println(word);
                     out.flush();
                     String input = in.readLine();
-                    if(word.equals("???")){
+                    if (word.equals("???")) {
                         word = input;
                         out.println("OK");
                         continue;
                     }
-                    if(word.toLowerCase().toCharArray()[word.length() - 1] != input.toLowerCase().toCharArray()[0]){
+                    if (word.toLowerCase().toCharArray()[word.length() - 1] != input.toLowerCase().toCharArray()[0]) {
                         out.println("NotOK");
                         continue;
                     }
